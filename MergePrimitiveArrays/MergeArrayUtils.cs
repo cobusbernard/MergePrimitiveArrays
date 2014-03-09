@@ -21,7 +21,7 @@
                     ? a[aCounter--]
                     : b[bCounter--];
                 }
-                else if (aCounter == 1)
+                else if (aCounter == -1)
                 {
                     valueToSet = b[bCounter--];
                 }
@@ -41,6 +41,7 @@
 
             var newLength = mergedArray.Length - duplicateCounter;
             var truncatedMergedArray = new int[newLength];
+            
             for (var i = 0; i < newLength; i++)
             {
                 truncatedMergedArray[i] = mergedArray[i];
