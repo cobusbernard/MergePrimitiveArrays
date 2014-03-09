@@ -180,6 +180,23 @@ namespace MergePrimitiveArrays.Test
                 string.Format("Expected {0}, but received {1}.", ArrayToString(expectedArray), ArrayToString(result))
                 );
         }
+
+        [TestMethod]
+        public void TestNegativeValues()
+        {
+            var aArray = new[] { -5 };
+            var bArray = new[] { -2, 5, 6, 8, 9 };
+
+            int[] expectedArray = { 9, 8, 6, 5, -2, -5 };
+
+            var result = MergeArrayUtils.MergeAndReorder(aArray, bArray);
+
+            CollectionAssert.AreEqual(
+                expectedArray,
+                result,
+                string.Format("Expected {0}, but received {1}.", ArrayToString(expectedArray), ArrayToString(result))
+                );
+        }
         #endregion
 
         #region Helper Methods
