@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergePrimitiveArrays", "MergePrimitiveArrays\MergePrimitiveArrays.csproj", "{469FF5BD-89C1-475B-911A-8FDB626FBEE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergePrimitiveArrays.Test", "MergePrimitiveArrays.Test\MergePrimitiveArrays.Test.csproj", "{4CBF889C-7005-4BAF-9F54-C0150D8345A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{469FF5BD-89C1-475B-911A-8FDB626FBEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{469FF5BD-89C1-475B-911A-8FDB626FBEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{469FF5BD-89C1-475B-911A-8FDB626FBEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CBF889C-7005-4BAF-9F54-C0150D8345A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CBF889C-7005-4BAF-9F54-C0150D8345A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CBF889C-7005-4BAF-9F54-C0150D8345A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CBF889C-7005-4BAF-9F54-C0150D8345A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
