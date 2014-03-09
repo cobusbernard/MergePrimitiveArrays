@@ -15,17 +15,17 @@
 
             do
             {
-                if (aCounter > -1 && bCounter > -1)
+                if (aCounter >= 0 && bCounter >= 0)
                 {
                     valueToSet = a[aCounter] > b[bCounter]
                     ? a[aCounter--]
                     : b[bCounter--];
                 }
-                else if (aCounter == -1)
+                else if (aCounter < 0)
                 {
                     valueToSet = b[bCounter--];
                 }
-                else if (bCounter == -1)
+                else if (bCounter < 0)
                 {
                     valueToSet = a[aCounter--];
                 }
@@ -37,7 +37,7 @@
                 }
                 mergedArray[mergeArrayCounter++] = valueToSet;
 
-            } while (aCounter > -1 || bCounter > -1);
+            } while (aCounter >= 0 || bCounter >= 0);
 
             var newLength = mergedArray.Length - duplicateCounter;
             var truncatedMergedArray = new int[newLength];
